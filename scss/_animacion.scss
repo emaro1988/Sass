@@ -1,57 +1,160 @@
 //variables
-$num-times:1;
+$num-times: 1;
 $timing: ease-in;
 $time: 1s;
 
+.mainIni__frase1 {
+  animation-name: entrada1;
+  animation-iteration-count: $num-times;
+  animation-timing-function: $timing;
+  animation-duration: $time;
+  animation-delay: $time;
+}
 
-.main__frase1{
-    animation-name: entrada1;
-    animation-iteration-count: $num-times;
-    animation-timing-function: $timing;
-    animation-duration: $time;
-    animation-delay: $time;
-          }
-             
-       @keyframes entrada1 {
-           0% {
-               transform: translateX(-100%);
-               }
-               25% {
-               transform: translateX(-75%);
-               }
-               50% {
-               transform: translateX(-50%);
-               }
-               75% {
-               transform: translateX(-25%);
-               }
-               100% {
-               transform: translateX(0%);
-               }
-             }
+@keyframes entrada1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
-.main__frase2{
-                animation-name: entrada2;
-                animation-iteration-count: $num-times;
-                animation-timing-function: $timing;
-                animation-duration: $time;
-                animation-delay: $time;
-               }
+.mainIni__frase2 {
+  animation-name: entrada2;
+  animation-iteration-count: $num-times;
+  animation-timing-function: $timing;
+  animation-duration: $time;
+  animation-delay: $time;
+}
 
-               @keyframes entrada2 {
-                0% {
-                    transform: translateX(100%);
-                    }
-                    25% {
-                    transform: translateX(75%);
-                    }
-                    50% {
-                    transform: translateX(50%);
-                    }
-                    75% {
-                    transform: translateX(25%);
-                    }
-                    100% {
-                    transform: translateX(0%);
-                   }
-           }
+@keyframes entrada2 {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(75%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  75% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.mainNos__titulo {
+  animation-name: entrada3;
+  animation-iteration-count: $num-times;
+  animation-timing-function: $timing;
+  animation-duration: $time;
+  animation-delay: $time;
+}
+
+@keyframes entrada3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}
+
+.mainProd__titulo {
+  animation-name: entrada4;
+  animation-iteration-count: $num-times;
+  animation-timing-function: $timing;
+  animation-duration: $time;
+  animation-delay: $time;
+}
+
+@keyframes entrada4 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}
+
+.mainServ__titulo {
+  animation-name: entrada5;
+  animation-iteration-count: $num-times;
+  animation-timing-function: $timing;
+  animation-duration: $time;
+  animation-delay: $time;
+}
+
+@keyframes entrada5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}
+
+.mainContact__titulo {
+  animation-name: entrada6;
+  animation-iteration-count: $num-times;
+  animation-timing-function: $timing;
+  animation-duration: $time;
+  animation-delay: $time;
+}
+
+@keyframes entrada6 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}

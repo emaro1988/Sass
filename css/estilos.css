@@ -1,4 +1,4 @@
-.main__frase1 {
+.mainIni__frase1 {
   animation-name: entrada1;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -23,7 +23,7 @@
     transform: translateX(0%);
   }
 }
-.main__frase2 {
+.mainIni__frase2 {
   animation-name: entrada2;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -43,6 +43,106 @@
   }
   75% {
     transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.mainNos__titulo {
+  animation-name: entrada3;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes entrada3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.mainProd__titulo {
+  animation-name: entrada4;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes entrada4 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.mainServ__titulo {
+  animation-name: entrada5;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes entrada5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.mainContact__titulo {
+  animation-name: entrada6;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes entrada6 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
   }
   100% {
     transform: translateX(0%);
@@ -105,13 +205,16 @@ body .sinpadding .header .header__nav {
   font-size: 3vh;
 }
 body .sinpadding .main {
+  background-color: white;
+}
+body .sinpadding .main .mainIni {
   background-image: url(../imagenes/cakewall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   height: 65vh;
 }
-body .sinpadding .main .main__frase1 {
+body .sinpadding .main .mainIni .mainIni__frase1 {
   background-color: rgba(255, 255, 255, 0.582);
   text-align: center;
   font-size: 4em;
@@ -119,13 +222,69 @@ body .sinpadding .main .main__frase1 {
   color: #a11212;
   margin: 30px 30px 30px 30px;
 }
-body .sinpadding .main .main__frase2 {
+body .sinpadding .main .mainIni .mainIni__frase2 {
   background-color: rgba(255, 255, 255, 0.582);
   text-align: center;
   font-size: 4em;
   border-radius: 20px;
   color: #094391;
   margin: 30px 30px 10px 30px;
+}
+body .sinpadding .main .mainNos .mainNos__titulo {
+  font-weight: bolder;
+  font-size: 8vh;
+  color: #a11212;
+  padding: 20px 20px 20px;
+}
+body .sinpadding .main .mainNos .mainNos__texto {
+  font-weight: bolder;
+  font-size: 3.5vh;
+  color: #010003;
+  text-align: justify;
+  margin: 20px 20px 20px 20px;
+}
+body .sinpadding .main .mainNos .mainNos__img {
+  padding: 20px 20px 20px 20px;
+}
+body .sinpadding .main .mainProd .mainProd__titulo {
+  font-weight: bolder;
+  font-size: 8vh;
+  color: #a11212;
+  margin: 60px;
+  padding: 10px;
+}
+body .sinpadding .main .mainServ .mainServ__titulo {
+  font-weight: bolder;
+  font-size: 8vh;
+  color: #a11212;
+}
+body .sinpadding .main .mainServ .text-justify {
+  text-align: justify;
+  font-size: 2.5vh;
+  font-weight: bolder;
+}
+body .sinpadding .main .mainServ .mainServ__subtitulo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #492ad6;
+}
+body .sinpadding .main .mainContact {
+  background-image: url(../imagenes/candies.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .sinpadding .main .mainContact .formulario {
+  background-color: transparent;
+}
+body .sinpadding .main .mainContact .formulario .mainContact__titulo {
+  color: #a11212;
+  font-size: 8vh;
+  padding: 10px;
+  font-weight: bolder;
+}
+body .sinpadding .main .mainContact .formulario .bigicon {
+  font-size: 35px;
+  color: #36a0ff;
 }
 body .sinpadding .footer {
   font-weight: normal;
