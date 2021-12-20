@@ -6,14 +6,22 @@ $colorfondo: rgb(45, 64, 89);
 $l: "Rubik", sans-serif;
 $blanco: white;
 $negrita: bolder;
-$redon: 10px;
-$pad: 1px;
 $fondo-frase: rgba(255, 255, 255, 0.582);
 $text-cent: center;
 $size-letra: 4em;
 $redon2: 20px;
 $tam-titulo: 8vh;
 $col-titulo: rgb(161, 18, 18);
+
+//Extend
+%icono{
+background-color: white;
+border-radius: 10px;
+padding: 1px;
+@media (max-width: 1000px) {
+  transform:scale(0.8, 0.8);
+}
+}
 
 //Anidación y Ampersand
 
@@ -25,17 +33,26 @@ body {
     padding-right: 0px;
     padding-left: 0px;
     overflow: hidden;
+
     //Header general
     .header {
       margin-top: 5px;
+      @media (max-width: 1000px) {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bolder;
+      }
 
       .header__img {
         background-color: $blanco;
         border-radius: 45%;
         margin: 2px 2px 2px 2px;
+        @media (max-width: 1000px) {
+          transform: scale(0.7, 0.7);
+        }
 
         &:hover {
-          background-color: lightskyblue;
+          background-color: lightgrey;
         }
       }
 
@@ -46,22 +63,23 @@ body {
         color: rgb(219, 212, 212);
         margin: 1vh;
         font-weight: $negrita;
-      }
-
-      .header__icono1 {
-        background-color: $blanco;
-        border-radius: $redon;
-        padding: $pad;
-
-        &:hover {
-          background-color: mediumaquamarine;
+        @media (max-width: 1000px) {
+          font-size: 1.8vh;
         }
       }
 
+      .header__icono1 {
+        @extend %icono;
+        
+
+        &:hover {
+          background-color: pink;
+        }}
+      
+
       .header__icono2 {
-        background-color: $blanco;
-        border-radius: $redon;
-        padding: $pad;
+        @extend %icono;
+        
 
         &:hover {
           background-color: mediumaquamarine;
@@ -69,12 +87,11 @@ body {
       }
 
       .header__icono3 {
-        background-color: $blanco;
-        border-radius: $redon;
-        padding: $pad;
+        @extend %icono;
+        
 
         &:hover {
-          background-color: mediumaquamarine;
+          background-color: lightskyblue;
         }
       }
 
@@ -86,7 +103,7 @@ body {
     //Main General
     .main {
       background-color: $blanco;
-      
+
       //Main de Página Inicio
       .mainIni {
         background-image: url(../imagenes/cakewall.jpg);
@@ -102,6 +119,9 @@ body {
           border-radius: $redon2;
           color: rgb(161, 18, 18);
           margin: 30px 30px 30px 30px;
+          @media (max-width: 1000px) {
+            font-size: 2.3em;
+          }
         }
 
         .mainIni__frase2 {
@@ -111,18 +131,23 @@ body {
           border-radius: $redon2;
           color: rgb(9, 67, 145);
           margin: 30px 30px 10px 30px;
+          @media (max-width: 1000px) {
+            font-size: 2.3em;
+          }
         }
       }
 
       //Main Página Nosotros
 
       .mainNos {
-        
         .mainNos__titulo {
           font-weight: $negrita;
           font-size: $tam-titulo;
           color: $col-titulo;
           padding: 20px 20px 20px;
+          @media (max-width: 1000px) {
+            font-size: 4vh;
+          }
         }
 
         .mainNos__texto {
@@ -131,6 +156,9 @@ body {
           color: rgb(1, 0, 3);
           text-align: justify;
           margin: 20px 20px 20px 20px;
+          @media (max-width: 1000px) {
+            font-size: 2vh;
+          }
         }
 
         .mainNos__img {
@@ -139,74 +167,83 @@ body {
       }
       //Main de Página de Productos
 
-      .mainProd{
-
-      .mainProd__titulo {
-        font-weight: $negrita;
-        font-size: $tam-titulo;
-        color: $col-titulo;
-        margin: 60px;
-        padding: 10px;
+      .mainProd {
+        .mainProd__titulo {
+          font-weight: $negrita;
+          font-size: $tam-titulo;
+          color: $col-titulo;
+          margin: 60px;
+          padding: 10px;
+          @media (max-width: 1000px) {
+            font-size: 30px;
+          }
+        }
       }
-    }
-//Main de Página de Servicios
+      //Main de Página de Servicios
 
-    .mainServ{
+      .mainServ {
+        .mainServ__titulo {
+          font-weight: $negrita;
+          font-size: $tam-titulo;
+          color: $col-titulo;
+          @media (max-width: 1000px) {
+            font-size: 30px;
+          }
+        }
 
-       .mainServ__titulo {
-        font-weight: $negrita;
-        font-size: $tam-titulo;
-        color: $col-titulo;
+        .text-justify {
+          text-align: justify;
+          font-size: 2.5vh;
+          font-weight: $negrita;
+        }
+
+        .mainServ__subtitulo {
+          font-weight: $negrita;
+          font-size: 25px;
+          color: rgb(73, 42, 214);
+        }
       }
+      //Main de Página de Contáctenos
 
-      .text-justify {
-        text-align: justify;
-        font-size: 2.5vh;
-        font-weight: $negrita;
-      }
-
-      .mainServ__subtitulo {
-        font-weight: $negrita;
-        font-size: 25px;
-        color: rgb(73, 42, 214);
-      }
-    }
-//Main de Página de Contáctenos
-
-    .mainContact {
-      background-image: url(../imagenes/candies.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-    
       .formulario {
         background-color: transparent;
+      
+      .mainContact {
+        background-image: url(../imagenes/candies.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        
 
         .mainContact__titulo {
           color: $col-titulo;
           font-size: $tam-titulo;
           padding: 10px;
           font-weight: $negrita;
+          @media (max-width: 1000px) {
+          font-size: 30px;
+          text-align: center;
+          }
         }
-    
-        .bigicon {
-          font-size: 35px;
-          color: #36a0ff;
+
+          
+          .bigicon {
+            font-size: 35px;
+            color: #36a0ff;
+          }
+        }
         }
       }
-    }
-  }
-  //Footer
+    
+    //Footer
     .footer {
       font-weight: normal;
       font-size: 2.5vh;
       color: $blanco;
       text-align: $text-cent;
+      @media (max-width: 1000px) {
+        font-size: 2vh;
+        }
     }
   }
 }
-
-
-
-
-
-

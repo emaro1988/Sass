@@ -1,14 +1,24 @@
 //variables
-$num-times: 1;
-$timing: ease-in;
-$time: 1s;
+//map
+$animation:(
+num-times: 1,
+timing: ease-in,
+time: 1s);
+
+//Mixin
+@mixin movement {
+
+  animation-iteration-count:map-get($animation,num-times);
+  animation-timing-function: map-get($animation,timing);
+  animation-duration: map-get($animation,time);
+  animation-delay: map-get($animation,time);
+
+}
+
 
 .mainIni__frase1 {
   animation-name: entrada1;
-  animation-iteration-count: $num-times;
-  animation-timing-function: $timing;
-  animation-duration: $time;
-  animation-delay: $time;
+  @include movement;
 }
 
 @keyframes entrada1 {
@@ -31,11 +41,10 @@ $time: 1s;
 
 .mainIni__frase2 {
   animation-name: entrada2;
-  animation-iteration-count: $num-times;
-  animation-timing-function: $timing;
-  animation-duration: $time;
-  animation-delay: $time;
+  @include movement;
 }
+ 
+
 
 @keyframes entrada2 {
   0% {
@@ -57,10 +66,7 @@ $time: 1s;
 
 .mainNos__titulo {
   animation-name: entrada3;
-  animation-iteration-count: $num-times;
-  animation-timing-function: $timing;
-  animation-duration: $time;
-  animation-delay: $time;
+  @include movement;
 }
 
 @keyframes entrada3 {
@@ -83,10 +89,7 @@ $time: 1s;
 
 .mainProd__titulo {
   animation-name: entrada4;
-  animation-iteration-count: $num-times;
-  animation-timing-function: $timing;
-  animation-duration: $time;
-  animation-delay: $time;
+  @include movement;
 }
 
 @keyframes entrada4 {
@@ -109,10 +112,7 @@ $time: 1s;
 
 .mainServ__titulo {
   animation-name: entrada5;
-  animation-iteration-count: $num-times;
-  animation-timing-function: $timing;
-  animation-duration: $time;
-  animation-delay: $time;
+  @include movement;
 }
 
 @keyframes entrada5 {
@@ -135,10 +135,7 @@ $time: 1s;
 
 .mainContact__titulo {
   animation-name: entrada6;
-  animation-iteration-count: $num-times;
-  animation-timing-function: $timing;
-  animation-duration: $time;
-  animation-delay: $time;
+  @include movement;
 }
 
 @keyframes entrada6 {
