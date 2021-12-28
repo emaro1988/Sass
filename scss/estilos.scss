@@ -50,10 +50,6 @@ body {
         @media (max-width: 1000px) {
           transform: scale(0.7, 0.7);
         }
-
-        &:hover {
-          background-color: lightgrey;
-        }
       }
 
       .header__inf {
@@ -71,28 +67,17 @@ body {
       .header__icono1 {
         @extend %icono;
         
-
-        &:hover {
-          background-color: pink;
-        }}
+     }
       
 
       .header__icono2 {
         @extend %icono;
-        
-
-        &:hover {
-          background-color: mediumaquamarine;
-        }
+              
       }
 
       .header__icono3 {
         @extend %icono;
         
-
-        &:hover {
-          background-color: lightskyblue;
-        }
       }
 
       .header__nav {
