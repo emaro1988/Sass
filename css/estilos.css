@@ -188,7 +188,6 @@ body .sinpadding .header .header__img {
     transform: scale(0.7, 0.7);
   }
 }
-
 body .sinpadding .header .header__inf {
   font-size: 2.5vh;
   font-family: "Rubik", sans-serif;
@@ -202,7 +201,6 @@ body .sinpadding .header .header__inf {
     font-size: 1.8vh;
   }
 }
-
 body .sinpadding .header .header__nav {
   font-weight: bolder;
   font-size: 3vh;
@@ -280,6 +278,67 @@ body .sinpadding .main .mainProd .mainProd__titulo {
   body .sinpadding .main .mainProd .mainProd__titulo {
     font-size: 30px;
   }
+}
+body .sinpadding .main .mainProd .container-card {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 100px;
+  perspective: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .sinpadding .main .mainProd .container-card .card__father {
+  margin: 20px;
+  perspective: 1000px;
+}
+body .sinpadding .main .mainProd .container-card .card__father .card {
+  width: 302px;
+  height: 302px;
+  position: relative;
+  transition: all 600ms;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+body .sinpadding .main .mainProd .container-card .card__father .card:hover {
+  transform: rotateY(180deg);
+}
+body .sinpadding .main .mainProd .container-card .card__father .card .card__front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+body .sinpadding .main .mainProd .container-card .card__father .card .body__card_front .borde {
+  border-radius: 20px;
+}
+body .sinpadding .main .mainProd .container-card .card__father .card .card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  background: #030364;
+  border-radius: 20px;
+}
+body .sinpadding .main .mainProd .container-card .card__father .card .card__back .body__card_back {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: translateZ(60px);
 }
 body .sinpadding .main .mainServ .mainServ__titulo {
   font-weight: bolder;
